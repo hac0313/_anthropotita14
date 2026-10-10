@@ -13,12 +13,13 @@ tickrate = 20
 port = 1212
 bindto = "::,0.0.0.0"
 max_connections = 65
+upnp = false
 
 [status]
 enabled = true
 
 [game]
-hostname = "Anthropotita 14 (RU)"
+hostname = "[RU]Anthropotita 14"
 lobbyenabled = true
 desc = "Сервер Anthropotita 14"
 maxplayers = 60
@@ -40,7 +41,8 @@ tags = "region:eu_w,rp:med"
 # URL of your server. Fill this in if you have a domain name,
 # want to use HTTPS (with a reverse proxy), or other advanced scenarios.
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
-server_url = "ss14://civ13.com:1212"
+# Set this to your VPS public IP after deployment (port must match net.port)
+# server_url = "ss14://91.199.149.139:1212"
 # Comma-separated list of URLs of hub servers to advertise to.
 hub_urls = "https://hub.spacestation14.com/"
 
