@@ -12,16 +12,16 @@ enabled = true
 tickrate = 20
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 256
+max_connections = 60
 
 [status]
 enabled = true
 
 [game]
-hostname = "Civilization 14 (UN)"
+hostname = "Anthropotita 14 (RU)"
 lobbyenabled = true
-desc = "An unofficial Civilization 14 server"
-maxplayers = 256
+desc = "Сервер CAnthropotita 14"
+maxplayers = 60
 lobbyduration = 60
 disallowlatejoins = false
 defaultpreset = "nomads"
@@ -68,10 +68,8 @@ pg_username = ""
 pg_password = ""
 
 [infolinks]
-discord = "https://discord.gg/hBEtg4x"
-website = "https://civ13.com"
-github = "https://github.com/Civ13/Civ14"
-wiki = "https://civ13.github.io/Civ14"
+discord = "https://discord.gg/5H6jPSH2dc"
+github = "https://github.com/hac0313/_anthropotita14"
 
 [server]
 lobby_right_panel_width = 500
