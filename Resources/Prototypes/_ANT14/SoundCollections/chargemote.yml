@@ -79,6 +79,19 @@
     - /Audio/_ANT14/ChargeMaleInsrurgent/charge_ar8.ogg
 
 - type: soundCollection
+  id: blugostaniacharge 
+  files:
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia1.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia2.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia3.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia4.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia5.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia6.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia7.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia8.ogg
+    - /Audio/_ANT14/BlugostaniaMaleVoice/charge_blugoslavia9.ogg  
+
+- type: soundCollection
   id: usacharge 
   files:
     - /Audio/_ANT14/USAMaleVoice/charge1.ogg

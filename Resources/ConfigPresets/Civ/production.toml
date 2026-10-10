@@ -12,7 +12,7 @@ enabled = true
 tickrate = 20
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 60
+max_connections = 65
 
 [status]
 enabled = true

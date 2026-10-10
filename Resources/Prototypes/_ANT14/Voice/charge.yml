@@ -89,6 +89,21 @@
     - arabcharge
 
 - type: emote
+  id: BlugostaniaCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - bluecharge
+
+- type: emote
   id: USACharge
   name: Charge
   category: Vocal
