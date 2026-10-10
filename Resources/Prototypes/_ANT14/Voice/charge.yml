@@ -1,0 +1,104 @@
+- type: emote
+  id: MaleCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true
+    components:
+      - Vocal
+    gender: Male
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: FemaleCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true
+    components:
+      - Vocal
+    gender: Female
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: SovietCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: GermanCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: RussianCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: ArabCharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
+
+- type: emote
+  id: USACharge
+  name: Charge
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    requireAll: true  
+    components:
+      - Vocal
+    gender: Male      
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - charge
