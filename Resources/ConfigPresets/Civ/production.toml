@@ -20,7 +20,7 @@ enabled = true
 [game]
 hostname = "Anthropotita 14 (RU)"
 lobbyenabled = true
-desc = "Сервер CAnthropotita 14"
+desc = "Сервер Anthropotita 14"
 maxplayers = 60
 lobbyduration = 60
 disallowlatejoins = false
