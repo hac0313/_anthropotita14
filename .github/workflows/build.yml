@@ -1,0 +1,62 @@
+name: Build & Release
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Linux Server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore
+        run: dotnet restore Content.Server/Content.Server.csproj
+
+      - name: Build Release
+        run: dotnet publish Content.Server/Content.Server.csproj -c Release -o ./publish --self-contained true -r linux-x64 -p:PublishSingleFile=false
+
+      - name: Copy Config
+        run: cp Resources/ConfigPresets/Civ/production.toml ./publish/production.toml
+
+      - name: Archive Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ss14-linux-x64
+          path: publish/
+          retention-days: 30
+
+      - name: Create Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            publish/**
+          generate_release_notes: true
+
+  deploy-docs:
+    name: Deploy Docs (optional)
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ false }}  # Set to true if you have docs
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

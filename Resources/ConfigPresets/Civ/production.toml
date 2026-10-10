@@ -41,7 +41,8 @@ tags = "region:eu_w,rp:med"
 # URL of your server. Fill this in if you have a domain name,
 # want to use HTTPS (with a reverse proxy), or other advanced scenarios.
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
-server_url = "ss14://civ13.com:1212"
+# Set this to your VPS public IP after deployment (port must match net.port)
+# server_url = "ss14://91.199.149.139:1212"
 # Comma-separated list of URLs of hub servers to advertise to.
 hub_urls = "https://hub.spacestation14.com/"
 
@@ -62,7 +63,7 @@ engine = "sqlite"
 sqlite_dbpath = "preferences.db"
 
 # PostgreSQL database configuration, should be self explanatory.
-pg_host = "ant14"
+pg_host = "localhost"
 pg_port = 5432
 pg_database = "ss14"
 pg_username = ""
