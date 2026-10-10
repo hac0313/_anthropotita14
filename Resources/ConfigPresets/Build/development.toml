@@ -4,7 +4,7 @@ lobbyenabled = true
 # Dev map for faster loading & convenience
 map = "Nomads"
 role_timers = false
-lobbyduration = 15
+lobbyduration = 60
 disallowlatejoins = false
 defaultpreset = "nomads"
 

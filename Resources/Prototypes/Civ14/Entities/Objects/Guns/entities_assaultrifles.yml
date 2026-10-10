@@ -390,7 +390,7 @@
 - type: entity
   name: L85A2
   parent: BaseGunCivAR
-id: civ13_ar_L85A2
+  id: civ13_ar_L85A2
   description: >-
       L85A2 (также известная как SA80) — служебная винтовка, состоящая на вооружении
       Великобритании с 1987 года. По дизайну это bullpup-винтовка, очень компактная,
