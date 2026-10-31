@@ -157,6 +157,24 @@ namespace Content.Shared.Movement.Systems
             Dirty(uid, move);
         }
 
+        public void ChangeBaseWalkSpeed(EntityUid uid, float baseWalkSpeed, MovementSpeedModifierComponent? move = null)
+        {
+            if (!Resolve(uid, ref move, false))
+                return;
+
+            move.BaseWalkSpeed = baseWalkSpeed;
+            Dirty(uid, move);
+        }
+
+        public void ChangeBaseSprintSpeed(EntityUid uid, float baseSprintSpeed, MovementSpeedModifierComponent? move = null)
+        {
+            if (!Resolve(uid, ref move, false))
+                return;
+
+            move.BaseSprintSpeed = baseSprintSpeed;
+            Dirty(uid, move);
+        }
+
         /// <summary>
         /// Refreshes the grounded friction and acceleration modifiers for an entity.
         /// </summary>
